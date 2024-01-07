@@ -1,0 +1,31 @@
+#calculator{
+    position: relative;
+    background-color: gray;
+    left: 36vw;
+    top: 5vw;
+    border: 0.2vw solid black;
+    border-radius: 2vw;
+    width:25vw
+}
+#display{
+    width: 22vw;
+    height: 3vw;
+    margin: 1vw;
+    background-color: rgba(156, 156, 232, 0.539);
+}
+.buttonContainer{
+    border: 0.2vw solid gray;
+    border-radius: 2vw;
+    margin: 1vw;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.button{
+    height: 3vw;
+    width: 4vw;
+    margin: 1vw;
+}
+.font{
+    font-size: 1vw;
+}
