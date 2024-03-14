@@ -13,45 +13,27 @@
     <div id="calculator">
         <input type="text" id="display" readonly>
         <div class="buttonContainer">
-            <button class="button font" onclick="currentDisplayValue = ``;
-            document.querySelector('#display').value = currentDisplayValue">c</button>
-            <button class="button font" onclick="currentDisplayValue +=1;
-             document.querySelector('#display').value = currentDisplayValue">1</button>
-            <button class="button font" onclick="currentDisplayValue +=2;
-            document.querySelector('#display').value = currentDisplayValue">2</button>
-            <button class="button font" onclick="currentDisplayValue +=`+`;
-            document.querySelector('#display').value = currentDisplayValue">+</button>
-            <button class="button font" onclick="currentDisplayValue +=3;
-            document.querySelector('#display').value = currentDisplayValue">3</button>
-            <button class="button font" onclick="currentDisplayValue +=5;
-            document.querySelector('#display').value = currentDisplayValue">4</button>
-            <button class="button font" onclick="currentDisplayValue +=`-`;
-            document.querySelector('#display').value = currentDisplayValue">-</button>
-            <button class="button font" onclick="currentDisplayValue +=5;
-            document.querySelector('#display').value = currentDisplayValue">5</button>
-            <button class="button font" onclick="currentDisplayValue +=6;
-            document.querySelector('#display').value = currentDisplayValue">6</button>
-            <button class="button font" onclick="currentDisplayValue +=`*`;
-            document.querySelector('#display').value = currentDisplayValue">*</button>
-            <button class="button font"onclick="currentDisplayValue +=7;
-            document.querySelector('#display').value = currentDisplayValue">7</button>
-            <button class="button font"onclick="currentDisplayValue +=8;
-            document.querySelector('#display').value = currentDisplayValue">8</button>
-            <button class="button font"onclick="currentDisplayValue +=`/`;
-            document.querySelector('#display').value = currentDisplayValue">/</button>
-            <button class="button font"onclick=" let result = eval(currentDisplayValue);
-            document.querySelector('#display').value = result">=</button>
-            <button class="button font"onclick="currentDisplayValue +=9;
-            document.querySelector('#display').value = currentDisplayValue">9</button>
-            <button class="button font"onclick="currentDisplayValue +=0;
-            document.querySelector('#display').value = currentDisplayValue">0</button>
-            <button class="button font"onclick="currentDisplayValue +=`.`;
-            document.querySelector('#display').value = currentDisplayValue">.</button>
+            <button class="button font" onclick="clearDisplay()">c</button>
+            <button class="button font" onclick="oneVal()">1</button>
+            <button class="button font" onclick="twoVal()">2</button>
+            <button class="button font" onclick="plusVal()">+</button>
+            <button class="button font" onclick="threeVal()">3</button>
+            <button class="button font" onclick="fourVal()">4</button>
+            <button class="button font" onclick="subVal()">-</button>
+            <button class="button font" onclick="fiveVal()">5</button>
+            <button class="button font" onclick="sixVal()">6</button>
+            <button class="button font" onclick="multiplyVal()">*</button>
+            <button class="button font"onclick="sevenVal()">7</button>
+            <button class="button font"onclick="eightVal()">8</button>
+            <button class="button font"onclick="divideVal()">/</button>
+            <button class="button font"onclick="nineVal()">9</button>
+            <button class="button font"onclick="zeroVal()">0</button>
+            <button class="button font"onclick="moduloVal()">%</button>
+            <button class="button font"onclick="decimalVal()">.</button>
+            <button class="button font result"onclick="equalVal()">=</button>
         </div>
     </div>
 
-    <script>
-        let currentDisplayValue = "";
-    </script>
+    <script src="calculator.js"></script>
 </body>
 </html>
